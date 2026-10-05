@@ -1,0 +1,13 @@
+{
+  "name": "veida",
+  "description": "Generate AI images from D with no API key and no account, via the free tier of veida.ai.",
+  "homepage": "https://veida.ai",
+  "authors": ["Veida"],
+  "copyright": "Copyright (c) 2026 Veida",
+  "license": "MIT",
+  "targetType": "library",
+  "configurations": [
+    { "name": "library", "targetType": "library", "excludedSourceFiles": ["source/app.d"] },
+    { "name": "cli", "targetType": "executable", "targetName": "veida", "mainSourceFile": "source/app.d" }
+  ]
+}
